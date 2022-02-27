@@ -50,8 +50,8 @@ def transcribe(
         transcripts = data["results"]["transcripts"]
         items = data["results"]["items"]
         first_tscr = transcripts[0]["transcript"]
-        first_tscr_alts = [i for i in items if i["type"] == "pronunciation"][0]["alternatives"][0]
-        first_tscr_alt_confidence = first_tscr_alts["confidence"]
+        first_tscr_alt = [i for i in items if i["type"] == "pronunciation"][0]["alternatives"][0]
+        first_tscr_alt_confidence = first_tscr_alt["confidence"]
 
         print(f'Result: "{first_tscr}" (First transcript), confidence: {first_tscr_alt_confidence}')
         # print(yaml.dump(data))
@@ -87,7 +87,7 @@ def main():
     # settings is a yaml file with keys:
     #   bucket_name<str>
     #   region<str>
-    settings = yaml.safe_load(open("creds.yaml").read())
+    settings = yaml.safe_load(open("settings.yaml").read())
     bucket_name = settings["bucket_name"]
     region = settings["region"]
 
