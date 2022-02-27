@@ -11,7 +11,7 @@ Result: "Yeah. Yeah. Yeah. 397153971539715397152. Mhm. Mhm. Mhm. 6647566475." (F
 ```
 
 For the given audio file, whilst the transcribing service interpreted the music/tones as speech, the numbers are
-transcribed correctly.
+transcribed almost correctly (Theres an erroneous '2' after the opening 5-symbol groups)
 
 ### References
 
