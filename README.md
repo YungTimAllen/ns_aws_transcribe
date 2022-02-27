@@ -1,2 +1,11 @@
-# ns_aws_transcribe
 Using AWS Transcribe for Speech-to-Text on number station recordings
+
+## Example
+
+* Input file was `poacher_full.mp3`
+
+```commandline
+Uploading to S3 ... done!
+Transcribing .......
+Result: "Yeah. Yeah. Yeah. 397153971539715397152. Mhm. Mhm. Mhm. 6647566475." (First transcript), confidence: 0.2741
+```
