@@ -1,4 +1,4 @@
-Using AWS Transcribe for Speech-to-Text on number station recordings
+**Using AWS Transcribe for Speech-to-Text on Number Station recordings**
 
 ## Example
 
@@ -9,3 +9,10 @@ Uploading to S3 ... done!
 Transcribing .......
 Result: "Yeah. Yeah. Yeah. 397153971539715397152. Mhm. Mhm. Mhm. 6647566475." (First transcript), confidence: 0.2741
 ```
+
+For the given audio file, whilst the transcribing service interpreted the music/tones as speech, the numbers are
+transcribed correctly.
+
+### References
+
+* Audio Source: https://priyom.org/
