@@ -26,14 +26,14 @@ def transcribe(
     transcribe = boto3.client("transcribe", region_name=region)
     job_name = job_name
     job_uri = s3_object_url
+
+    # Get to work
     transcribe.start_transcription_job(
         TranscriptionJobName=job_name,
         Media={"MediaFileUri": job_uri},
         MediaFormat=media_format,
         LanguageCode=language_code,
     )
-
-    # Get to work
     print("Transcribing .", end="")
     while True:
         status = transcribe.get_transcription_job(TranscriptionJobName=job_name)
